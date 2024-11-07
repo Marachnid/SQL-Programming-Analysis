@@ -26,7 +26,7 @@ SELECT DISTINCT (
 	END) AS Publisher
 FROM Staging;
 
--- some annoying ******* artifacts end up as '' after inserting 2nd and 3rd list items
+-- some annoying artifacts end up as '' after inserting 2nd and 3rd list items
 -- should be 926 unique publishers (-1 '' entry that keeps coming back (4 of them in total, 3 cut out because of UNIQUE Index)
 	-- might create a rule to trim LLC off of Publishers or trim the ',' out of the publisher name
 DELETE FROM Publisher

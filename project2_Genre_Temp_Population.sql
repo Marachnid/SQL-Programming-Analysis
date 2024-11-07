@@ -42,7 +42,7 @@ SELECT DISTINCT (
 	END) AS Genre
 FROM Staging;
 
--- some annoying ******* artifacts end up as '' after inserting list items after the first
+-- some annoying artifacts end up as '' after inserting list items after the first
 
 DELETE FROM Genre
 WHERE Genre = '';
